@@ -1,5 +1,35 @@
 :root {
-    // --as-color-primary: #FFA630;
-    // --as-color-secondary: #2E5077;
-    // --as-color-complementary: #D7E8BA;
+    --as--color--primary: #006fcf;
+    --as--color--secondary: #fff;
+    --as--color--complementary: #01185D;
+}
+
+.as-toolbar a {
+    color: #01185D !important;
+} 
+
+.as-toolbar {
+    border-bottom: 1px solid #01185D !important;
+} 
+
+.as-toolbar__item {
+    border-bottom: 1px solid #01185D !important;
+} 
+
+.as-sidebar--right {
+    order: 9999;
+    box-shadow: none !important;
+}
+
+.legend-circle {
+    position: relative;
+    min-width: 12px;
+    height: 12px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 50%;
+}
+
+.as-map-footer {
+    border-top: 1px solid #01185D !important;
 }

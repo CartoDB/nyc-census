@@ -34,11 +34,6 @@ class RightBar extends Component {
     return (
       <aside className={this.state.size} data-name={this.props.name}>
       <div className="as-m--24">
-      <CategoryVL
-        title='State'
-        description='Total damage for each railroad company in USD'
-      />
-
       </div>
       </aside>
 

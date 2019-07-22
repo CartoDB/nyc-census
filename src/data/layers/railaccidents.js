@@ -1,25 +1,24 @@
 export default {
-  name: 'Rail Accidents',
+  name: 'Census 2010 Participation: Postal Codes',
 
   visible: true,
 
   cartocss: `
   #layer {
-    marker-width: 7;
-    marker-fill: ramp([equipment_damage], (#f3e79b, #fac484, #f8a07e, #eb7f86, #ce6693, #a059a0, #5c53a5), quantiles);
-    marker-fill-opacity: 1;
-    marker-allow-overlap: true;
-    marker-line-width: 1;
-    marker-line-color: #FFFFFF;
-    marker-line-opacity: 1;
+    polygon-fill: ramp([participation], (#eff3ff, #c6dbef, #9ecae1, #6baed6, #4292c6, #2171b5, #084594), quantiles);
+  }
+  #layer::outline {
+    line-width: 1;
+    line-color: #FFFFFF;
+    line-opacity: 0.5;
   }
   `,
 
   query: `
-    SELECT * FROM rail_accidents
+    SELECT * FROM zip_code_040114
   `,
 
   options: {
-    featureClickColumns: ['cartodb_id', 'railroad', 'total_damage', 'cause', 'weather', 'accident_type', 'image']
+    featureClickColumns: ['zipcode', 'po_name', 'cartodb_id', 'population', 'county', 'participation', 'borough_participation']
   }
 };

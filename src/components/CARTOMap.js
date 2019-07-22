@@ -75,7 +75,7 @@ class CARTOMap extends Component {
       const layer = new carto.layer.Layer(source, style, options);
 
       if(options.featureClickColumns) {
-        layer.on('featureClicked', this.openPopup.bind(this));
+        // layer.on('featureClicked', this.openPopup.bind(this));
       }
 
       this.props.client.getLeafletLayer().addTo(this.props.map);

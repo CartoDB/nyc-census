@@ -20,18 +20,15 @@ class Header extends Component {
       <header className="as-toolbar">
         <HeaderToggle />
       <div className="as-toolbar__group">
-        <div className="as-toolbar__item">
-          <Avatar
-            size='l'
-            alt='Isthmus'
-            icon="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-LNBHPmcyIcNeWf3W50m%2Favatar.png?generation=1537815172519034&alt=media"
-          />
-        </div>
+      <div className="as-toolbar__item">
+        <img src="https://www1.nyc.gov/assets/census/images/content/header/logo.png" style={{width: "88px"}} alt="CARTO" />
+      </div>
         <nav className="as-toolbar__actions">
           <ul>
-            <HeaderLink name='Home' link='/' />
-            <HeaderLink name='Another Map' link='/page' />
-            <HeaderLink name='Help' link='/help' />
+            <HeaderLink name='Census 2020 Home' link='/' />
+            <HeaderLink name='FAQ' link='/' />
+            <HeaderLink name="What's At Stake?" link='/' />
+            <HeaderLink name="Get Involved" link='/' />
           </ul>
         </nav>
       </div>

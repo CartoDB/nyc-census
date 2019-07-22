@@ -15,7 +15,7 @@ const Page = () => (
       <div className="as-content">
         <main className="as-main">
           <div className="as-map-area">
-            <CARTOVLMap />
+            <CARTOMap />
             {/* <Panel
               vertical='top'
               horizontal='left'
@@ -23,16 +23,16 @@ const Page = () => (
               name='Controls'
             /> */}
           </div>
-          {/* <BottomBar
+          <BottomBar
             background=''
             name='Bottom'
-          /> */}
+          />
         </main>
-        <RightBar
+        {/* <RightBar
           size='l'
           background=''
           name='Right'
-        />
+        /> */}
         {/* <LeftBar
           size='s'
           background=''
